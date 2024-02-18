@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav{
+    width: 100vw;
+    background-color: #23856D;
+     width: 100vw;
+     overflow-x:hidden;
+     color:white;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+    height:58px;
+    gap:6vw;
+}
+
+/* .call{
+    color: white;
+} */
+.call,.mail,.follow-us{
+    display: flex;
+    flex-direction:row; 
+    gap:0.2vw;
+    align-items: center;
+}
+
+.follow-us-img{
+    display: flex;
+    gap:1vw;
+    align-items: center;
+}
+.second-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16vw;
+    text-align: center;
+    height: 59px;
+    
+}
+.second-nav .logo{
+    display: flex;
+    align-items: center;
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+.link{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:1vw;
+}
+.login-register{
+    display: flex;
+    flex-direction: row;
+    gap:1.5vw;
+    align-items: center;
+}
+
+
+
+.p-first-nav{
+   
+    /* flex-wrap: wrap; */
+   
+    color:white;
+    display: flex;
+    flex-direction:row ;
+    padding-left:  10vw;
+   
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding-top: 2vh;
+    height: 58px;
+    gap:5vw;
+    overflow-x: hidden;
+   
+}
+.p-first-nav img{
+    
+    width: 16px;
+    height: 16px;
+}
+.follow-us img{
+    margin-top: 5px ;
+    margin-left: 15px;
+    
+}
+#p-second-nav{
+    width: 100vw;
+    /* flex-wrap: wrap; */
+    height: 206px;
+    color:white;
+    display: flex;
+    flex-direction:row ;
+    padding-left:10vw;
+    
+    /* justify-content: center; */
+    align-items: center;
+    height: 58px;
+    gap:12vw;
+   
+}
+#p-second-nav #p-links{
+   display: flex;
+   gap:15px; 
+}
+#p-second-nav .p-link{
+    text-decoration: none;
+    font-size:14px;
+    font-family:'Montserrat';
+    font-weight:bold;
+    line-height:24px;
+    color:#737373;
+    letter-spacing: 0.2px;
+}
+
+.nav-for-mob{
+    display: none;
+}
+
+.second-nav-mob{
+    display: none;
+}
+
+
+@media (max-width:1070px) {
+    .nav{ 
+        gap:3vw;
+    }
+    .second-nav{
+        gap:8vw;
+    }
+    
+}
+@media (max-width:1070px) {
+    .nav{ 
+        display: none   ;
+    }
+    .second-nav{
+        gap:14vw;
+    }
+    
+}
+@media (max-width:780px) {
+    .nav{ 
+        display: none   ;
+    }
+    .second-nav{
+        gap:10vw;
+    }
+    
+}
+@media (max-width:720px) {
+    .nav{ 
+        display: none   ;
+    }
+    .second-nav{
+        gap:6vw;
+    }
+    
+}
+@media (max-width:680px) {
+    .nav{ 
+        display: none   ;
+    }
+    .second-nav{
+        display: none;
+    }
+
+    .nav-for-mob{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 4vw;
+    }
+
+    .second-nav-mob{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:20px;
+    }
+    .links-mob{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap:5px;
+    }
+    .login-register-mob{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap:5px;
+    }
+    
+}
+
